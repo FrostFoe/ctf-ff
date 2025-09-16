@@ -18,7 +18,12 @@ export function PriceAmount({ loading, priceMap, priceSuffix, tier, value }: Pro
       ) : (
         <>
           <div className={cn('text-[80px] leading-[96px] tracking-[-1.6px] font-medium')}>
-            {priceMap[tier.priceId[value]].replace(/\.00$/, '')}
+            {(() => {
+              const raw = priceMap?.[tier.priceId[value]];
+              // If price isn't available (e.g. mock data), fall back to a safe placeholder
+              if (typeof raw === 'string') return raw.replace(/\.00$/, '');
+              return '0';
+            })()}
           </div>
           <div className={cn('font-medium leading-[12px] text-[12px]')}>{priceSuffix}</div>
         </>

@@ -24,7 +24,7 @@ export function Confirmation({ isOpen, onClose, title, description, onConfirm }:
               Close
             </Button>
             <Button onClick={() => onConfirm()} variant={'destructive'}>
-              Cancel subscription
+              Confirm
             </Button>
           </div>
         </div>

@@ -1,32 +1,29 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { Plus } from 'lucide-react';
 
 const teamMembers = [
   {
     name: 'Daniel Cromitch',
-    email: 'dc@paddle.com',
+    email: 'dc@company.com',
     initials: 'DC',
     role: 'Owner',
   },
   {
     name: 'Melissa Lee',
-    email: 'ml@paddle.com',
+    email: 'ml@company.com',
     initials: 'ML',
     role: 'Member',
   },
   {
     name: 'Jackson Khan',
-    email: 'JK@paddle.com',
+    email: 'JK@company.com',
     initials: 'JK',
     role: 'Member',
   },
   {
     name: 'Isa Lopez',
-    email: 'il@paddle.com',
+    email: 'il@company.com',
     initials: 'IL',
     role: 'Guest',
   },
@@ -41,11 +38,6 @@ export function DashboardTeamMembersCard() {
             <span className={'text-xl font-medium'}>Team members</span>
             <span className={'text-base leading-4 text-secondary'}>Invite your team members to collaborate</span>
           </div>
-          <Button asChild={true} size={'sm'} variant={'outline'} className={'text-sm rounded-sm border-border'}>
-            <Link href={'/dashboard/subscriptions'}>
-              <Plus size={16} className={'text-muted-foreground'} />
-            </Link>
-          </Button>
         </CardTitle>
       </CardHeader>
       <CardContent className={'p-0 pt-6 flex gap-6 flex-col'}>
