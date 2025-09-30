@@ -1,13 +1,33 @@
-# **App Name**: Simple Hello
 
-## Core Features:
+# Project Blueprint: AI Content Generation Platform
 
-- Text Display: Display the 'Hello World' text.
+## 1. Core Idea
 
-## Style Guidelines:
+An intuitive, AI-powered SaaS platform that empowers users to generate high-quality written content effortlessly. The application will provide a seamless experience, from generating blog posts and social media updates to managing the content in a personalized dashboard.
 
-- Primary color: Soft, muted blue (#748DA6) to evoke a sense of calmness and simplicity. A slightly desaturated blue adds a touch of modernity without being overwhelming.
-- Background color: Very light desaturated blue (#F0F4F8), nearly white, to create a clean and unobtrusive backdrop.
-- Accent color: Muted indigo (#5C6B8A). Provides a subtle contrast and complements the primary color.
-- Font: 'Inter', a grotesque-style sans-serif with a modern look, is suitable for body text and headlines. The content here is suitable for either.
-- Simple, centered layout with generous whitespace.
+## 2. Key Features
+
+- **AI Content Generation:** A core feature allowing users to generate various types of content (e.g., blog articles, marketing copy, social media posts) based on simple prompts.
+- **User-Friendly Dashboard:** A central hub where users can view, edit, and organize their generated content.
+- **Secure Authentication:** Robust and simple user authentication using Google.
+- **Subscription Tiers:**
+  - **Free Plan:** Limited access to content generation to allow users to try the platform.
+  - **Pro Plan:** Unlocks advanced features, higher generation limits, and priority support.
+- **Modern UI/UX:** A clean, visually appealing interface built with modern design principles.
+
+## 3. Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **UI Library:** React with Shadcn/ui Components
+- **Styling:** Tailwind CSS
+- **AI Integration:** Genkit for LLM interactions
+- **Authentication:** Auth.js
+- **Database:** Prisma with Neon (Serverless Postgres)
+
+## 4. UI/UX Vision
+
+- **Theme:** A modern, dark-themed interface that is easy on the eyes and puts the focus on the content.
+- **Layout:** Clean, minimalist, and intuitive layouts that make navigation and content creation straightforward.
+- **Responsiveness:** Fully responsive design that works flawlessly on desktops, tablets, and mobile devices.
+- **Animations:** Subtle animations and transitions to enhance the user experience and make the application feel fluid and dynamic.
+- **Component-Driven:** Leverage `shadcn/ui` for a consistent and high-quality component library.
