@@ -1,24 +1,48 @@
-import type {Metadata} from 'next';
-import './globals.css';
+import "@/styles/globals.css";
 
-export const metadata: Metadata = {
-  title: 'Simple Hello',
-  description: 'A simple hello world app',
-};
+import { fontGeist, fontHeading, fontSans, fontUrban } from "@/assets/fonts";
+import { SessionProvider } from "next-auth/react";
+import { ThemeProvider } from "next-themes";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+import { cn, constructMetadata } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@/components/analytics";
+import ModalProvider from "@/components/modals/providers";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+export const metadata = constructMetadata();
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontUrban.variable,
+          fontHeading.variable,
+          fontGeist.variable,
+        )}
+      >
+        <SessionProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <ModalProvider>{children}</ModalProvider>
+            <Analytics />
+            <Toaster richColors closeButton />
+            <TailwindIndicator />
+          </ThemeProvider>
+        </SessionProvider>
+      </body>
     </html>
   );
 }
