@@ -9,5 +9,5 @@ export const fontSans = FontSans({
 export const fontHeading = FontSans({
   subsets: ["bengali"],
   variable: "--font-heading",
-  weight: "700",
+  weight: ["600", "700"],
 });
