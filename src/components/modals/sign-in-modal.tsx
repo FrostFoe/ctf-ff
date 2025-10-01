@@ -41,7 +41,7 @@ function SignInModal({
             disabled={signInClicked}
             onClick={() => {
               setSignInClicked(true);
-              signIn("google", { redirect: false }).then(() =>
+              signIn("github", { redirect: false }).then(() =>
                 setTimeout(() => {
                   setShowSignInModal(false);
                 }, 400),
@@ -51,9 +51,9 @@ function SignInModal({
             {signInClicked ? (
               <Icons.spinner className="mr-2 size-4 animate-spin" />
             ) : (
-              <Icons.google className="mr-2 size-4" />
+              <Icons.gitHub className="mr-2 size-4" />
             )}{" "}
-            Sign In with Google
+            Sign In with GitHub
           </Button>
         </div>
       </div>
