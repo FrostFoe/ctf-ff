@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
 
-import { prisma } from "@/lib/db";
+import { supabase } from "@/lib/db";
 import { userNameSchema } from "@/lib/validations/user";
 
 export type FormData = {
@@ -21,14 +21,12 @@ export async function updateUserName(userId: string, data: FormData) {
     const { name } = userNameSchema.parse(data);
 
     // Update the user name.
-    await prisma.user.update({
-      where: {
-        id: userId,
-      },
-      data: {
-        name: name,
-      },
-    });
+    const { error } = await supabase
+      .from("users")
+      .update({ name: name })
+      .eq("id", userId);
+
+    if (error) throw error;
 
     revalidatePath("/dashboard/settings");
     return { status: "success" };

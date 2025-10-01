@@ -2,13 +2,12 @@
 
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
-import { UserRole } from "@prisma/client";
 
-import { prisma } from "@/lib/db";
+import { supabase } from "@/lib/db";
 import { userRoleSchema } from "@/lib/validations/user";
 
 export type FormData = {
-  role: UserRole;
+  role: "USER" | "ADMIN";
 };
 
 export async function updateUserRole(userId: string, data: FormData) {
@@ -22,14 +21,12 @@ export async function updateUserRole(userId: string, data: FormData) {
     const { role } = userRoleSchema.parse(data);
 
     // Update the user role.
-    await prisma.user.update({
-      where: {
-        id: userId,
-      },
-      data: {
-        role: role,
-      },
-    });
+    const { error } = await supabase
+      .from("users")
+      .update({ role: role })
+      .eq("id", userId);
+
+    if (error) throw error;
 
     revalidatePath("/dashboard/settings");
     return { status: "success" };

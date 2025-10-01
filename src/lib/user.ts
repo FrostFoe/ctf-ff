@@ -1,16 +1,14 @@
-import { prisma } from "@/lib/db";
+import { supabase } from "@/lib/db";
 
 export const getUserByEmail = async (email: string) => {
   try {
-    const user = await prisma.user.findUnique({
-      where: {
-        email: email,
-      },
-      select: {
-        name: true,
-        emailVerified: true,
-      },
-    });
+    const { data: user, error } = await supabase
+      .from("users")
+      .select("name, emailVerified")
+      .eq("email", email)
+      .single();
+
+    if (error) throw error;
 
     return user;
   } catch {
@@ -20,7 +18,13 @@ export const getUserByEmail = async (email: string) => {
 
 export const getUserById = async (id: string) => {
   try {
-    const user = await prisma.user.findUnique({ where: { id } });
+    const { data: user, error } = await supabase
+      .from("users")
+      .select("*")
+      .eq("id", id)
+      .single();
+
+    if (error) throw error;
 
     return user;
   } catch {

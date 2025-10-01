@@ -1,18 +1,15 @@
-import { PrismaClient } from "@prisma/client";
+import { createClient } from "@supabase/supabase-js";
 
-import "server-only";
+import { env } from "@/env.mjs";
 
-declare global {
-  // eslint-disable-next-line no-var
-  var cachedPrisma: PrismaClient;
-}
-
-export let prisma: PrismaClient;
-if (process.env.NODE_ENV === "production") {
-  prisma = new PrismaClient();
-} else {
-  if (!global.cachedPrisma) {
-    global.cachedPrisma = new PrismaClient();
-  }
-  prisma = global.cachedPrisma;
-}
+export const supabase = createClient(
+  env.NEXT_PUBLIC_SUPABASE_URL,
+  env.SUPABASE_SERVICE_ROLE_KEY,
+  {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+    },
+  },
+);

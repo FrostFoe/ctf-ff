@@ -13,10 +13,6 @@ export async function getUserSubscriptionPlan(
 
   return {
     ...plan,
-    stripeCustomerId: null,
-    stripeSubscriptionId: null,
-    stripePriceId: null,
-    stripeCurrentPeriodEnd: null,
     isPaid: false,
     interval: null,
     isCanceled: true,

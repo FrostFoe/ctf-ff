@@ -1,9 +1,7 @@
-
 import NextAuth, { type DefaultSession } from "next-auth";
-import { UserRole } from "@prisma/client";
-import { PrismaAdapter } from "@auth/prisma-adapter";
+import { SupabaseAdapter } from "@auth/supabase-adapter";
 
-import { prisma } from "@/lib/db";
+import { supabase } from "@/lib/db";
 import { getUserById } from "@/lib/user";
 import authConfig from "@/auth/config";
 
@@ -11,7 +9,7 @@ import authConfig from "@/auth/config";
 declare module "next-auth" {
   interface Session {
     user: {
-      role: UserRole;
+      role: "USER" | "ADMIN";
     } & DefaultSession["user"];
   }
 }
@@ -20,7 +18,10 @@ export const {
   handlers: { GET, POST },
   auth,
 } = NextAuth({
-  adapter: PrismaAdapter(prisma),
+  adapter: SupabaseAdapter({
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    secret: process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  }),
   session: { strategy: "jwt" },
   pages: {
     signIn: "/login",
@@ -38,7 +39,7 @@ export const {
         }
 
         if (token.role) {
-          session.user.role = token.role as UserRole;
+          session.user.role = token.role as "USER" | "ADMIN";
         }
 
         session.user.name = token.name;
