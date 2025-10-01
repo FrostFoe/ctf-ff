@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useContext, useState } from "react";
@@ -45,7 +44,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
         key={offer.title}
       >
         <div className="min-h-[150px] items-start space-y-4 bg-muted/50 p-6">
-          <p className="flex font-urban text-sm font-bold uppercase tracking-wider text-muted-foreground">
+          <p className="font-urban flex text-sm font-bold uppercase tracking-wider text-muted-foreground">
             {offer.title}
           </p>
 
@@ -140,7 +139,10 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
   return (
     <MaxWidthWrapper>
       <section className="flex flex-col items-center text-center">
-        <HeaderSection label="মূল্য নির্ধারণ" title="সম্পূর্ণ গতিতে শুরু করুন!" />
+        <HeaderSection
+          label="মূল্য নির্ধারণ"
+          title="সম্পূর্ণ গতিতে শুরু করুন!"
+        />
 
         <div className="mb-4 mt-10 flex items-center gap-5">
           <ToggleGroup

@@ -34,7 +34,9 @@ export default async function HeroLanding() {
           target="_blank"
         >
           <span className="mr-3">🎉</span>
-          <span className="hidden md:flex">উপস্থাপন করা হচ্ছে&nbsp;</span> পরবর্তী প্রমাণীকরণ ভূমিকা টেমপ্লেট <Icons.twitter className="ml-2 size-3.5" />
+          <span className="hidden md:flex">উপস্থাপন করা হচ্ছে&nbsp;</span>{" "}
+          পরবর্তী প্রমাণীকরণ ভূমিকা টেমপ্লেট{" "}
+          <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
         <h1 className="text-balance font-heading text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
@@ -48,7 +50,8 @@ export default async function HeroLanding() {
           className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
-          Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui, Stripe ব্যবহার করে আপনার পরবর্তী প্রজেক্ট তৈরি করুন।
+          Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui,
+          Stripe ব্যবহার করে আপনার পরবর্তী প্রজেক্ট তৈরি করুন।
         </p>
 
         <div

@@ -1,5 +1,5 @@
-import localFont from "next/font/local";
 import { Hind_Siliguri as FontSans } from "next/font/google";
+import localFont from "next/font/local";
 
 export const fontSans = FontSans({
   subsets: ["bengali"],
