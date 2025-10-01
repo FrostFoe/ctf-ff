@@ -34,14 +34,13 @@ export default async function HeroLanding() {
           target="_blank"
         >
           <span className="mr-3">🎉</span>
-          <span className="hidden md:flex">Introducing&nbsp;</span> Next Auth
-          Roles Template on <Icons.twitter className="ml-2 size-3.5" />
+          <span className="hidden md:flex">উপস্থাপন করা হচ্ছে&nbsp;</span> পরবর্তী প্রমাণীকরণ ভূমিকা টেমপ্লেট <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
         <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
-          Kick off with a bang with{" "}
+        একটি धमाका দিয়ে শুরু করুন{" "}
           <span className="text-gradient_indigo-purple font-extrabold">
-            SaaS Starter
+            SaaS স্টার্টার
           </span>
         </h1>
 
@@ -49,8 +48,7 @@ export default async function HeroLanding() {
           className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
-          Build your next project using Next.js 14, Prisma, Neon, Auth.js v5,
-          Resend, React Email, Shadcn/ui, Stripe.
+          Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui, Stripe ব্যবহার করে আপনার পরবর্তী প্রজেক্ট তৈরি করুন।
         </p>
 
         <div
@@ -65,7 +63,7 @@ export default async function HeroLanding() {
               "gap-2",
             )}
           >
-            <span>Go Pricing</span>
+            <span>মূল্য নির্ধারণে যান</span>
             <Icons.arrowRight className="size-4" />
           </Link>
           <Link

@@ -63,15 +63,15 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                 )}
               </div>
               <div className="-mb-1 ml-2 text-left text-sm font-medium text-muted-foreground">
-                <div>/month</div>
+                <div>/মাস</div>
               </div>
             </div>
           </div>
           {offer.prices.monthly > 0 ? (
             <div className="text-left text-sm text-muted-foreground">
               {isYearly
-                ? `$${offer.prices.yearly} will be charged when annual`
-                : "when charged monthly"}
+                ? `$${offer.prices.yearly} বার্ষিক চার্জ করা হবে`
+                : "মাসিক চার্জ করা হলে"}
             </div>
           ) : null}
         </div>
@@ -109,7 +109,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                   "w-full",
                 )}
               >
-                Go to dashboard
+                ড্যাশবোর্ডে যান
               </Link>
             ) : (
               <BillingFormButton
@@ -128,7 +128,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
               rounded="full"
               onClick={() => setShowSignInModal(true)}
             >
-              Sign in
+              সাইন ইন করুন
             </Button>
           )}
         </div>
@@ -139,7 +139,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
   return (
     <MaxWidthWrapper>
       <section className="flex flex-col items-center text-center">
-        <HeaderSection label="Pricing" title="Start at full speed !" />
+        <HeaderSection label="মূল্য নির্ধারণ" title="সম্পূর্ণ গতিতে শুরু করুন!" />
 
         <div className="mb-4 mt-10 flex items-center gap-5">
           <ToggleGroup
@@ -155,14 +155,14 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
               className="rounded-full px-5 data-[state=on]:!bg-primary data-[state=on]:!text-primary-foreground"
               aria-label="Toggle yearly billing"
             >
-              Yearly (-20%)
+              বার্ষিক (-২০%)
             </ToggleGroupItem>
             <ToggleGroupItem
               value="monthly"
               className="rounded-full px-5 data-[state=on]:!bg-primary data-[state=on]:!text-primary-foreground"
               aria-label="Toggle monthly billing"
             >
-              Monthly
+              মাসিক
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
@@ -174,17 +174,17 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
         </div>
 
         <p className="mt-3 text-balance text-center text-base text-muted-foreground">
-          Email{" "}
+          আমাদের সহায়তা দলের সাথে যোগাযোগ করতে{" "}
           <a
             className="font-medium text-primary hover:underline"
             href="mailto:support@saas-starter.com"
           >
             support@saas-starter.com
           </a>{" "}
-          for to contact our support team.
+          -এ ইমেল করুন।
           <br />
           <strong>
-            You can test the subscriptions and won&apos;t be charged.
+            আপনি সাবস্ক্রিপশন পরীক্ষা করতে পারেন এবং আপনাকে চার্জ করা হবে না।
           </strong>
         </p>
       </section>

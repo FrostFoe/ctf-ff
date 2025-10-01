@@ -3,9 +3,9 @@ import { SidebarNavItem, SiteConfig } from "types";
 const site_url = process.env.NEXT_PUBLIC_APP_URL!;
 
 export const siteConfig: SiteConfig = {
-  name: "SaaS Starter",
+  name: "SaaS স্টার্টার",
   description:
-    "Get your project off to an explosive start with SaaS Starter! Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
+    "Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui এবং Stripe-এর শক্তি ব্যবহার করে আপনার পরবর্তী বড় জিনিস তৈরি করুন।",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
@@ -17,30 +17,30 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "কোম্পানি",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Terms", href: "/terms" },
-      { title: "Privacy", href: "/privacy" },
+      { title: "সম্পর্কে", href: "#" },
+      { title: "এন্টারপ্রাইজ", href: "#" },
+      { title: "শর্তাবলী", href: "/terms" },
+      { title: "গোপনীয়তা", href: "/privacy" },
     ],
   },
   {
-    title: "Product",
+    title: "প্রোডাক্ট",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "নিরাপত্তা", href: "#" },
+      { title: "কাস্টমাইজেশন", href: "#" },
+      { title: "গ্রাহক", href: "#" },
+      { title: "পরিবর্তনের তালিকা", href: "#" },
     ],
   },
   {
-    title: "Docs",
+    title: "ডক্স",
     items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "ভূমিকা", href: "#" },
+      { title: "ইনস্টলেশন", href: "#" },
+      { title: "কম্পোনেন্ট", href: "#" },
+      { title: "কোড ব্লক", href: "#" },
     ],
   },
 ];

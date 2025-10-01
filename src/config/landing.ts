@@ -2,50 +2,50 @@ import { FeatureLdg, InfoLdg, TestimonialType } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "আপনার প্রকল্পগুলোকে শক্তিশালী করুন",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
+      "আমাদের ওপেন-সোর্স SaaS প্ল্যাটফর্মের সাথে আপনার প্রকল্পগুলির সম্পূর্ণ সম্ভাবনা উন্মোচন করুন। নির্বিঘ্নে সহযোগিতা করুন, অনায়াসে উদ্ভাবন করুন এবং সীমাহীনভাবে স্কেল করুন।",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "সহযোগিতামূলক",
+        description: "আপনার দলের সদস্যদের সাথে রিয়েল-টাইমে একসাথে কাজ করুন।",
         icon: "laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "উদ্ভাবনী",
+        description: "ধ্রুবক আপডেটের অ্যাক্সেসের সাথে বক্ররেখা থেকে এগিয়ে থাকুন।",
         icon: "settings",
       },
       {
-        title: "Scalable",
+        title: "স্কেলযোগ্য",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "আমাদের প্ল্যাটফর্মটি আপনার প্রয়োজন অনুসারে মানিয়ে নেওয়ার জন্য প্রয়োজনীয় স্কেলেবিলিটি সরবরাহ করে।",
         icon: "search",
       },
     ],
   },
   {
-    title: "Seamless Integration",
+    title: "নির্বিঘ্ন ইন্টিগ্রেশন",
     description:
-      "Integrate our open-source SaaS seamlessly into your existing workflows. Effortlessly connect with your favorite tools and services for a streamlined experience.",
+      "আপনার বিদ্যমান ওয়ার্কফ്ലোগুলিতে আমাদের ওপেন-সোর্স SaaS নির্বিgh্নে একীভূত করুন। একটি সুव्यवस्थित অভিজ্ঞতার জন্য আপনার প্রিয় সরঞ্জাম এবং পরিষেবাগুলির সাথে অনায়াসে সংযোগ স্থাপন করুন।",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Flexible",
+        title: "নমনীয়",
         description:
-          "Customize your integrations to fit your unique requirements.",
+          "আপনার অনন্য প্রয়োজনীয়তা অনুসারে আপনার ইন্টিগ্রেশনগুলি কাস্টমাইজ করুন।",
         icon: "laptop",
       },
       {
-        title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
+        title: "দক্ষ",
+        description: "আপনার প্রক্রিয়াগুলি সুव्यवस्थित করুন এবং ম্যানুয়াল প্রচেষ্টা হ্রাস করুন।",
         icon: "search",
       },
       {
-        title: "Reliable",
+        title: "নির্ভরযোগ্য",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
+          "আমাদের শক্তিশালী পরিকাঠামো এবং ব্যাপক ডকুমেন্টেশনের উপর নির্ভর করুন।",
         icon: "settings",
       },
     ],
@@ -54,42 +54,42 @@ export const infos: InfoLdg[] = [
 
 export const features: FeatureLdg[] = [
   {
-    title: "Feature 1",
+    title: "ফিচার ১",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
     icon: "nextjs",
   },
   {
-    title: "Feature 2",
+    title: "ফিচার ২",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
     icon: "google",
   },
   {
-    title: "Feature 3",
+    title: "ফিচার ৩",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
     icon: "gitHub",
   },
   {
-    title: "Feature 4",
+    title: "ফিচার ৪",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
     icon: "laptop",
   },
   {
-    title: "Feature 5",
+    title: "ফিচার ৫",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
     icon: "user",
   },
   {
-    title: "Feature 6",
+    title: "ফিচার ৬",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
@@ -99,52 +99,52 @@ export const features: FeatureLdg[] = [
 
 export const testimonials: TestimonialType[] = [
   {
-    name: "John Doe",
-    job: "Full Stack Developer",
+    name: "জন ডো",
+    job: "ফুল স্ট্যাক ডেভেলপার",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     review:
-      "The next-saas-stripe-starter repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend next-saas-stripe-starter to any developer.",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টার রেপো আমার ডেভেলপমেন্ট ওয়ার্কফ্লোতে সত্যিই বিপ্লব এনেছে। এর ব্যাপক বৈশিষ্ট্য এবং স্ট্রাইপের সাথে নির্বিঘ্ন ইন্টিগ্রেশনের মাধ্যমে, আমি আগের চেয়ে দ্রুত প্রকল্প তৈরি এবং স্থাপন করতে সক্ষম হয়েছি। ডকুমেন্টেশন পরিষ্কার এবং সংক্ষিপ্ত, যা সেটআপ প্রক্রিয়ার মাধ্যমে নেভিগেট করা সহজ করে তোলে। আমি যেকোনো ডেভেলপারকে নেক্সট-সাস-স্ট্রাইপ-স্টার্টার সুপারিশ করছি।",
   },
   {
-    name: "Alice Smith",
-    job: "UI/UX Designer",
+    name: "অ্যালিস স্মিথ",
+    job: "ইউআই/ইউএক্স ডিজাইনার",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টারকে ধন্যবাদ, আমি রেকর্ড সময়ে আধুনিক এবং আকর্ষণীয় ইউজার ইন্টারফেস তৈরি করতে সক্ষম হয়েছি। স্টার্টার কিটটি মসৃণ এবং স্বজ্ঞাত ডিজাইন তৈরির জন্য একটি শক্ত ভিত্তি সরবরাহ করে, যা আমাকে আমার কাজের সৃজনশীল দিকগুলিতে আরও বেশি মনোযোগ দিতে দেয়।",
   },
   {
-    name: "David Johnson",
-    job: "DevOps Engineer",
+    name: "ডেভিড জনসন",
+    job: "ডেভอปস ইঞ্জিনিয়ার",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I was able to streamline the entire process and get payments up and running in no time. ",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টারকে ধন্যবাদ, আমি পুরো প্রক্রিয়াটি সুव्यवस्थित করতে এবং অল্প সময়ের মধ্যে পেমেন্ট চালু করতে সক্ষম হয়েছি।",
   },
   {
-    name: "Michael Wilson",
-    job: "Project Manager",
+    name: "মাইকেল উইলসন",
+    job: "প্রজেক্ট ম্যানেজার",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
     review:
-      "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!",
+      "আমি নেক্সট-সাস-স্ট্রাইপ-স্টার্টারের কোডের গুণমান এবং পরিষ্কার ডকুমেন্টেশন দেখে মুগ্ধ। দলের জন্য শুভেচ্ছা!",
   },
   {
-    name: "Sophia Garcia",
-    job: "Data Analyst",
+    name: "সোফিয়া গার্সিয়া",
+    job: "ডেটা অ্যানালিস্ট",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     review:
-      "next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টার আমাকে ব্যবহারকারীর ডেটা দক্ষতার সাথে পরিচালনা করার জন্য প্রয়োজনীয় সরঞ্জাম সরবরাহ করেছে। আপনাকে অনেক ধন্যবাদ!",
   },
   {
-    name: "Emily Brown",
-    job: "Marketing Manager",
+    name: "এমিলি ব্রাউন",
+    job: "মার্কেটিং ম্যানেজার",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
     review:
-      "next-saas-stripe-starter has been an invaluable asset in my role as a marketing manager. With its seamless integration with Stripe, I've been able to launch targeted marketing campaigns with built-in payment functionality, allowing us to monetize our products and services more effectively.",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টার একজন মার্কেটিং ম্যানেজার হিসেবে আমার ভূমিকায় একটি অমূল্য সম্পদ। স্ট্রাইপের সাথে এর নির্বিঘ্ন ইন্টিগ্রেশনের মাধ্যমে, আমি বিল্ট-ইন পেমেন্ট কার্যকারিতা সহ লক্ষ্যযুক্ত বিপণন প্রচারণা চালু করতে সক্ষম হয়েছি, যা আমাদের পণ্য এবং পরিষেবাগুলিকে আরও কার্যকরভাবে নগদীকরণ করতে দেয়।",
   },
   {
-    name: "Jason Stan",
-    job: "Web Designer",
+    name: "জেসন স্ট্যান",
+    job: "ওয়েব ডিজাইনার",
     image: "https://randomuser.me/api/portraits/men/9.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "নেক্সট-সাস-স্ট্রাইপ-স্টার্টারকে ধন্যবাদ, আমি রেকর্ড সময়ে আধুনিক এবং আকর্ষণীয় ইউজার ইন্টারফেস তৈরি করতে সক্ষম হয়েছি। স্টার্টার কিটটি মসৃণ এবং স্বজ্ঞাত ডিজাইন তৈরির জন্য একটি শক্ত ভিত্তি সরবরাহ করে, যা আমাকে আমার কাজের সৃজনশীল দিকগুলিতে আরও বেশি মনোযোগ দিতে দেয়।",
   },
 ];

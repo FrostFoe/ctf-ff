@@ -12,8 +12,8 @@ export default function Features() {
       <div className="pb-6 pt-28">
         <MaxWidthWrapper>
           <HeaderSection
-            label="Features"
-            title="Discover all features."
+            label="বৈশিষ্ট্য"
+            title="সমস্ত বৈশিষ্ট্য আবিষ্কার করুন।"
             subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus
           ariatur."
           />
@@ -47,7 +47,7 @@ export default function Features() {
                         className="px-4"
                       >
                         <Link href="/" className="flex items-center gap-2">
-                          <span>Visit the site</span>
+                          <span>সাইট ভিজিট করুন</span>
                           <Icons.arrowUpRight className="size-4" />
                         </Link>
                       </Button>

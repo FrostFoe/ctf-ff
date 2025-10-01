@@ -21,9 +21,9 @@ export function ComparePlans() {
   return (
     <MaxWidthWrapper>
       <HeaderSection
-        label="Plans"
-        title="Compare Our Plans"
-        subtitle="Find the perfect plan tailored for your business needs!"
+        label="প্ল্যান"
+        title="আমাদের প্ল্যান তুলনা করুন"
+        subtitle="আপনার ব্যবসার প্রয়োজনের জন্য উপযুক্ত প্ল্যান খুঁজুন!"
       />
 
       <div className="my-10 overflow-x-scroll max-lg:mx-[-0.8rem] md:overflow-x-visible">

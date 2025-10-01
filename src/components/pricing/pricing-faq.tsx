@@ -10,33 +10,33 @@ import { HeaderSection } from "../shared/header-section";
 const pricingFaqData = [
   {
     id: "item-1",
-    question: "What is the cost of the free plan?",
+    question: "বিনামূল্যে প্ল্যানের খরচ কত?",
     answer:
-      "Our free plan is completely free, with no monthly or annual charges. It's a great way to get started and explore our basic features.",
+      "আমাদের বিনামূল্যে প্ল্যান সম্পূর্ণ বিনামূল্যে, কোনো মাসিক বা বার্ষিক চার্জ ছাড়াই। এটি শুরু করার এবং আমাদের বেসিক বৈশিষ্ট্যগুলি অন্বেষণ করার একটি দুর্দান্ত উপায়।",
   },
   {
     id: "item-2",
-    question: "How much does the Basic Monthly plan cost?",
+    question: "বেসিক মাসিক প্ল্যানের খরচ কত?",
     answer:
-      "The Basic Monthly plan is priced at $15 per month. It provides access to our core features and is billed on a monthly basis.",
+      "বেসিক মাসিক প্ল্যানের মূল্য প্রতি মাসে $15। এটি আমাদের মূল বৈশিষ্ট্যগুলিতে অ্যাক্সেস সরবরাহ করে এবং মাসিক ভিত্তিতে বিল করা হয়।",
   },
   {
     id: "item-3",
-    question: "What is the price of the Pro Monthly plan?",
+    question: "প্রো মাসিক প্ল্যানের মূল্য কত?",
     answer:
-      "The Pro Monthly plan is available for $25 per month. It offers advanced features and is billed on a monthly basis for added flexibility.",
+      "প্রো মাসিক প্ল্যান প্রতি মাসে $25 এর জন্য উপলব্ধ। এটি উন্নত বৈশিষ্ট্য সরবরাহ করে এবং অতিরিক্ত নমনীয়তার জন্য মাসিক ভিত্তিতে বিল করা হয়।",
   },
   {
     id: "item-4",
-    question: "Do you offer any annual subscription plans?",
+    question: "আপনারা কি কোনো বার্ষিক সাবস্ক্রিপশন প্ল্যান অফার করেন?",
     answer:
-      "Yes, we offer annual subscription plans for even more savings. The Basic Annual plan is $144 per year, and the Pro Annual plan is $300 per year.",
+      "হ্যাঁ, আমরা আরও বেশি সঞ্চয়ের জন্য বার্ষিক সাবস্ক্রিপশন প্ল্যান অফার করি। বেসিক বার্ষিক প্ল্যান প্রতি বছর $144, এবং প্রো বার্ষিক প্ল্যান প্রতি বছর $300।",
   },
   {
     id: "item-5",
-    question: "Is there a trial period for the paid plans?",
+    question: "পেইড প্ল্যানগুলির জন্য কি কোনো ট্রায়াল পিরিয়ড আছে?",
     answer:
-      "We offer a 14-day free trial for both the Pro Monthly and Pro Annual plans. It's a great way to experience all the features before committing to a paid subscription.",
+      "আমরা প্রো মাসিক এবং প্রো বার্ষিক উভয় প্ল্যানের জন্য ১৪ দিনের বিনামূল্যে ট্রায়াল অফার করি। একটি পেইড সাবস্ক্রিপশনে প্রতিশ্রুতিবদ্ধ হওয়ার আগে সমস্ত বৈশিষ্ট্য अनुभव করার এটি একটি দুর্দান্ত উপায়।",
   },
 ];
 
@@ -45,10 +45,8 @@ export function PricingFaq() {
     <section className="container max-w-4xl py-2">
       <HeaderSection
         label="FAQ"
-        title="Frequently Asked Questions"
-        subtitle="Explore our comprehensive FAQ to find quick answers to common
-          inquiries. If you need further assistance, don't hesitate to
-          contact us for personalized help."
+        title="সচরাচর জিজ্ঞাস্য"
+        subtitle="সাধারণ জিজ্ঞাসার দ্রুত উত্তর খুঁজে পেতে আমাদের व्यापक FAQ অন্বেষণ করুন। আপনার যদি আরও সহায়তার প্রয়োজন হয়, ব্যক্তিগতকৃত সাহায্যের জন্য আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না।"
       />
 
       <Accordion type="single" collapsible className="my-12 w-full">
