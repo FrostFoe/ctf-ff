@@ -37,8 +37,8 @@ export default async function HeroLanding() {
           <span className="hidden md:flex">উপস্থাপন করা হচ্ছে&nbsp;</span> পরবর্তী প্রমাণীকরণ ভূমিকা টেমপ্লেট <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
-        <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
-        একটি धमाका দিয়ে শুরু করুন{" "}
+        <h1 className="text-balance font-heading text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
+          একটি धमाका দিয়ে শুরু করুন{" "}
           <span className="text-gradient_indigo-purple font-extrabold">
             SaaS স্টার্টার
           </span>
@@ -63,7 +63,7 @@ export default async function HeroLanding() {
               "gap-2",
             )}
           >
-            <span>মূল্য নির্ধারণে যান</span>
+            <span>মূল্য নির্ধারণ দেখুন</span>
             <Icons.arrowRight className="size-4" />
           </Link>
           <Link

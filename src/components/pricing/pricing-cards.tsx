@@ -71,7 +71,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
             <div className="text-left text-sm text-muted-foreground">
               {isYearly
                 ? `$${offer.prices.yearly} বার্ষিক চার্জ করা হবে`
-                : "মাসিক চার্জ করা হলে"}
+                : "মাসিক চার্জ করা হবে"}
             </div>
           ) : null}
         </div>
@@ -98,7 +98,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           </ul>
 
           {userId && subscriptionPlan ? (
-            offer.title === "Starter" ? (
+            offer.title === "স্টার্টার" ? (
               <Link
                 href="/dashboard"
                 className={cn(

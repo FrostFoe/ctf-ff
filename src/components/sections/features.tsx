@@ -13,7 +13,7 @@ export default function Features() {
         <MaxWidthWrapper>
           <HeaderSection
             label="বৈশিষ্ট্য"
-            title="সমস্ত বৈশিষ্ট্য আবিষ্কার করুন।"
+            title="সমস্ত বৈশিষ্ট্য আবিষ্কার করুন"
             subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus
           ariatur."
           />
